@@ -1,2 +1,2 @@
 # Qude
-GSAP Clone site
+🎨 clone coding | Qude
