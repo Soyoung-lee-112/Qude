@@ -1,4 +1,3 @@
-
 window.onload = function () {
     const menuOpen = document.querySelector('.gnb .menuOpen');
     const menuBox = document.querySelector('.gnb .menuBox');
@@ -109,7 +108,8 @@ window.onload = function () {
         listBox[i].addEventListener('mouseover', () => {
             img.src = `images/img${i}.jpg`;
             gsap.set(imgBox, { scale: 0, opacity: 0, duration: .4 }),
-            gsap.to(imgBox, {scale: 1, opacity: 1, duration: .4 })
+            gsap.to(imgBox, { scale: 1, opacity: 1, duration: .4 })
+            
         })
         listBox[i].addEventListener('mousemove', (e) => {
             let imgBoxX = e.pageX + 20;
@@ -119,7 +119,7 @@ window.onload = function () {
             imgBox.style.top = imgBoxY + 'px';
         })
         listBox[i].addEventListener('mouseout', () => {
-            gsap.to(imgBox, {scale: 0, opacity: 0, duration: .4 })
+            gsap.to(imgBox, { scale: 0, opacity: 0, duration: .4 })
         })
     }
 
@@ -156,5 +156,22 @@ window.onload = function () {
     setTimeout(() => loading.classList.remove('scene1', 'scene2'), 2500),
     setTimeout(() => rotate.forEach(rotate => rotate.classList.add('on')), 2500),
     setTimeout(() => opacity.forEach(rotate => rotate.classList.add('on')), 2500);
+
+
+    //10  .con6 h2 ScrollTrigger Animation
+        gsap.timeline({
+            scrollTrigger: {
+                trigger: '.con6',
+                start: '-100% 20%',
+                end: '0% 0%',
+                scrub: 1,
+                // markers: true,
+            }
+        })
+        .to('.con6 h2', {
+        x: () => window.innerWidth * -0.2, // 화면 너비의 50%만큼 이동 (동적 값)
+        y: 0,
+        z: 0,
+        ease: "none"},0)
 
 }

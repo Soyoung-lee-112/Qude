@@ -44,6 +44,7 @@ header .gnb .menuBox.on li:nth-child(2) a {transition-delay: 0.05s ; }
 header .gnb .menuBox.on li:nth-child(3) a {transition-delay: 0.1s ; }
 header .gnb .menuBox.on li:nth-child(4) a {transition-delay: 0.15s ; }
 
+.wrap.on header .inner .logo span img{filter: invert(100%);}
 /* visual */
 .visual{margin-bottom: 0;}
 .visual .inner{ display: grid; height: 100vh; padding: 25px 50px 25px; box-sizing: border-box; grid-template-rows: auto 1fr auto;}
@@ -71,7 +72,7 @@ animation: opa linear 1.5s 0s infinite; }
     80%{opacity: 1;}
     100%{opacity: 0;}
 }
-.con1 .textAni ul{display: grid; max-width: 800px;}
+.con1 .textAni ul{display: grid; max-width: 800px; overflow: hidden;}
 .con1 .textAni li{grid-row-start: 1; grid-column-start: 1; font-size: 65px; text-transform: uppercase; letter-spacing: -1px; transform: translateX(30px); opacity: 0;}
 
 /* con2 */
@@ -138,14 +139,26 @@ animation: opa linear 1.5s 0s infinite; }
 
 /* con5 */
 .con5{background-color: #fff; color: #141412;margin-bottom:0;}
-.con5 .inner{padding: 50px;}
+.con5 .inner{padding: 50px; }
 .con5 .mainTextBox h2{font-size:100px; text-transform: uppercase;letter-spacing: -5px; font-weight: normal;}
 .con5 .listBox{border-top:1px solid #000; margin-top: 150px;}
 .con5 .listBox li{display: grid; grid-template-columns: 2fr 1fr auto; border-bottom:1px solid #000; padding: 10px 0; cursor: pointer;}
 .con5 .listBox li h3{font-size: 40px; letter-spacing: -1px; font-weight:normal;}
+.con5 .listBox li:hover h3{color: #47B171;}
 .con5 .listBox li p{align-self: center;}
 .con5 .imgBox{position: absolute; transform: scale(0); opacity: 0; z-index: 9}
 .wrap.on{overflow: hidden;}
+
+/* con6 */
+.con6{display: grid; grid-template-columns:repeat(2, minmax(0, 1fr));padding: 70px 0 90px;
+     background: rgba(225 219 253/1); overflow: hidden;}
+.con6 h2{display: flex; gap: 90px; justify-content: flex-start; grid-column: span 2;font-size: 135px; font-weight: 500; 
+        letter-spacing: -5px;  color: #000;text-transform: uppercase ;margin-bottom: 10px;}
+ .con6 .box{max-width: 600px; grid-column-start: 2;}
+ .con6 .box .mainTextBox{font-size: 45px; color: #000; letter-spacing: -0.02em;line-height: 1.1;}
+ .con6 .box .mainTextBox span{font-size: 16px; margin-bottom: 15px;}
+ .con6 .box .btnBox{display: flex; gap: 10px;}
+ .con6 .box .btnBox .btn{background:#333; color: #fff; }
 
 /* footer */
 footer{position: relative; overflow: hidden; }
@@ -200,3 +213,4 @@ footer .logoWrap span img{width: 100%;}
     50%{opacity: 0;}
     100%{opacity: 1;}
 }
+
