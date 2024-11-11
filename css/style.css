@@ -21,7 +21,7 @@ section{margin-bottom: 150px; }
 .box{border-radius: 10px; overflow: hidden;}
 .btn{font-size: 11px; padding: 12px 25px; box-sizing: border-box; border-radius: 30px; display: inline-block; background:#fff; color: #333; text-transform: uppercase; margin-top: 30px;}
 
-.wrap{position: relative; margin: 0 auto; background: #141212; color: #fff;padding-bottom: 1000px; }
+.wrap{position: relative; margin: 0 auto; background: #141212; color: #fff; }
 
 header{position: fixed; width: 100%; z-index: 9999; }
 header .inner {padding: 30px 50px 0;}
@@ -135,3 +135,32 @@ animation: opa linear 1.5s 0s infinite; }
 
 .con4 .subTextBox{display: grid; grid-template-columns: 1fr 1fr;}
 .con4 .subTextBox .subText{max-width: 600px; font-size: 22px; grid-column-start:2 ;}
+
+/* con5 */
+.con5{background-color: #fff; color: #141412;margin-bottom:0;}
+.con5 .inner{padding: 50px;}
+.con5 .mainTextBox h2{font-size:100px; text-transform: uppercase;letter-spacing: -5px; font-weight: normal;}
+.con5 .listBox{border-top:1px solid #000; margin-top: 150px;}
+.con5 .listBox li{display: grid; grid-template-columns: 2fr 1fr auto; border-bottom:1px solid #000; padding: 10px 0; cursor: pointer;}
+.con5 .listBox li h3{font-size: 40px; letter-spacing: -1px; font-weight:normal;}
+.con5 .listBox li p{align-self: center;}
+.con5 .imgBox{position: absolute; transform: scale(0); opacity: 0; z-index: 9}
+
+/* footer */
+footer{position: relative; overflow: hidden; }
+footer .inner{display: flex; flex-direction: column;height: 100vh; padding: 75px 75px 25px; box-sizing: border-box; z-index: 2;}
+footer .inner .box{display: flex; flex-direction: column; padding: 50px 0 0;flex-grow: 1; background-color: rgba(55,55,55, .4);backdrop-filter: blur(100px); }
+footer .inner .box .mainTextBox{text-align: center;}
+footer .inner .box .mainTextBox h2{font-size: 120px; text-transform: uppercase; letter-spacing: -1px ; font-weight: normal; margin-bottom: 30px;}
+footer .inner .box .mainTextBox p span{opacity: 0.5; display: block;}
+footer .inner .box .talkBtn{display: grid; place-items: center; flex-grow: 1;}
+footer .inner .box .talkBtn a{display: block; width:95px; height: 95px; border-radius: 100%; box-shadow:0 0 0 13px #1c1c1c, 0 0 50px rgba(255,255,255,.3);}
+footer .inner .box .talkBtn a span{display: block; width: 95%; height: 95%; margin: 2.5% auto; border-radius: 100%; background: #e36840;transition: all .3s ease; }
+footer .inner .box .talkBtn a:hover span{width: 100%; height: 100%; margin:0 auto;}
+footer .inner .box .btnBox{display: flex; justify-content: center; gap: 20px 40px; align-items: center; flex-direction: row; border-top: 1px solid rgba(255,255,255,0.2);}
+footer .inner .box .btnBox .btn{padding:10px; background: none; color: #fff; opacity: 0.5;margin-bottom: 20px;}
+footer .inner .box .btnBox .btn:hover{opacity: 1;}
+footer .copyright{flex-direction: row; text-align: center; padding-top: 25psx; font-size: 14px;}
+footer .logoWrap{position: absolute; left: 0; top: -50%; width: 100%; z-index: 1;display: flex; justify-content: space-between;}
+footer .logoWrap span{width: 16%; }
+footer .logoWrap span img{width: 100%;}
