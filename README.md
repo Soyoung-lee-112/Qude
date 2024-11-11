@@ -1,7 +1,7 @@
 # Qude
 🎨 clone coding | Qude
  
-##📍 요약
+## 📍 요약
 - 사용 기술: HTML, CSS, JavasScript(ES6+), GSAP
 - URL : [clone-qude.netlify.app/](https://clone-qude.netlify.app/)
   
