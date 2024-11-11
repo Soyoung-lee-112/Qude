@@ -145,10 +145,11 @@ animation: opa linear 1.5s 0s infinite; }
 .con5 .listBox li h3{font-size: 40px; letter-spacing: -1px; font-weight:normal;}
 .con5 .listBox li p{align-self: center;}
 .con5 .imgBox{position: absolute; transform: scale(0); opacity: 0; z-index: 9}
+.wrap.on{overflow: hidden;}
 
 /* footer */
 footer{position: relative; overflow: hidden; }
-footer .inner{display: flex; flex-direction: column;height: 100vh; padding: 75px 75px 25px; box-sizing: border-box; z-index: 2;}
+footer .inner{position: relative;display: flex; flex-direction: column;height: 100vh; padding: 75px 75px 25px; box-sizing: border-box; z-index: 2;}
 footer .inner .box{display: flex; flex-direction: column; padding: 50px 0 0;flex-grow: 1; background-color: rgba(55,55,55, .4);backdrop-filter: blur(100px); }
 footer .inner .box .mainTextBox{text-align: center;}
 footer .inner .box .mainTextBox h2{font-size: 120px; text-transform: uppercase; letter-spacing: -1px ; font-weight: normal; margin-bottom: 30px;}
@@ -164,3 +165,38 @@ footer .copyright{flex-direction: row; text-align: center; padding-top: 25psx; f
 footer .logoWrap{position: absolute; left: 0; top: -50%; width: 100%; z-index: 1;display: flex; justify-content: space-between;}
 footer .logoWrap span{width: 16%; }
 footer .logoWrap span img{width: 100%;}
+
+/* loading */
+.loading{position: fixed; top: 0; left: 0; width: 100%; height: 100vh; background: #141212; z-index: 9999;display: none;}
+.loading .logo{width: 200px; display: flex; justify-content: space-between; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); overflow: hidden; }
+.loading .logo span {padding: 0 1px; display: block;}
+.loading .logo span img{width: 100%; }
+
+.loading.scene1{display: block;}
+.loading.scene1 .logo span{animation-name: up; animation-duration: 1s;}
+@keyframes up {
+    0%{transform: translateY(30px)}
+    30%{transform: translateY(30px)}
+    100%{transform: translateY(0px)}
+}
+
+.loading.scene2 .logo span:nth-child(1){opacity: 0; transition: 0.1s}
+.loading.scene2 .logo span:nth-child(2){opacity: 0; transition: 0.3s}
+.loading.scene2 .logo span:nth-child(3){opacity: 0; transition: 0.5s}
+.loading.scene2 .logo span:nth-child(4){opacity: 0; transition: 0.6s}
+.loading.scene2 .logo span:nth-child(5){opacity: 0; transition: 0.7s}
+.loading.scene2 .logo span:nth-child(6){opacity: 0; transition: 0.8s}
+
+/* rotate */
+.rotate.on{animation-name: rotate; animation-duration: 1.2s;}
+@keyframes rotate {
+    0%{transform-origin: 0 0; transform: translate(0px, 100%) rotate(100deg); transition: 1s;}
+    100%{transform-origin: 0 0; transform: translate(0px, 0px) rotate(0); transition: 1s;}
+}
+
+.opacity.on{animation-name: fadeIn; animation-duration: 2s;}
+@keyframes fadeIn {
+    0%{opacity: 0;}
+    50%{opacity: 0;}
+    100%{opacity: 1;}
+}

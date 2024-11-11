@@ -5,12 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>QUAD Clone Coding</title>
     <link rel="stylesheet" href="css/style.css" />
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
   </head>
   <body>
     <div class="wrap">
       <header>
         <div class="inner">
-          <a href="#" class="logo">
+          <a href="#" class="logo opacity">
             <span><img src="images/logo/S_J.png" alt="" /></span>
             <span><img src="images/logo/S_Y.png" alt="" /></span>
             <span><img src="images/logo/S_O.png" alt="" /></span>
@@ -20,7 +26,7 @@
           </a>
         </div>
         <nav class="gnb">
-          <p class="menuOpen">MENU</p>
+          <p class="menuOpen opacity">MENU</p>
           <ul cl class="menuBox">
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
@@ -33,11 +39,11 @@
        <section class="visual">
         <div class="inner">
           <h1 class="mainText">
-            <span><i>AGENCY</i></span>
-            <span><i>CREATIVE AUDIO</i></span>
+            <span><i class="rotate">AGENCY</i></span>
+            <span><i class="rotate">CREATIVE AUDIO</i></span>
           </h1>
-          <h2 class="subText">Creation, production & distribution of podcasts.<br/> <span>In Toulouse. And everywhere else.</span></h2>
-          <div class="logoWrap">
+          <h2 class="subText opacity">Creation, production & distribution of podcasts.<br/> <span>In Toulouse. And everywhere else.</span></h2>
+          <div class="logoWrap rotate">
             <span id="j"><img src="/images//logo/L_J.png" alt=""></span>
             <span id="y"><img src="/images//logo/L_Y.png" alt=""></span>
             <span id="o"><img src="/images//logo/L_O.png" alt=""></span>
@@ -301,7 +307,7 @@
             </div>
           </div>
           <div class="copyright">
-            <p>Jyoung &#64; 2024</p>
+            <p>Syoung &#64; 2024</p>
           </div>
         </div>
         <div class="logoWrap">
@@ -313,6 +319,16 @@
           <span id="g"><img src="/images//logo/L_G.png" alt=""></span>
       </div>
       </footer>
+    </div>
+    <div class="loading">
+      <div class="logo">
+        <span><img src="images/logo/S_J.png" alt=""></span>
+        <span><img src="images/logo/S_Y.png" alt=""></span>
+        <span><img src="images/logo/S_O.png" alt=""></span>
+        <span><img src="images/logo/S_U.png" alt=""></span>
+        <span><img src="images/logo/S_N.png" alt=""></span>
+        <span><img src="images/logo/S_G.png" alt=""></span>
+      </div>
     </div>
     <script src="js/main.js" defer></script>
   </body>
